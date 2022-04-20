@@ -66,7 +66,7 @@
 </footer>
 </div>
 <script>
-    new WOW().init();
+    var wow = new WOW().init();
     var sticky = document.getElementById('sticky');
     window.addEventListener('wheel', function(e){
         if(e.deltaY > 0){

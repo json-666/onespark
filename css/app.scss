@@ -569,17 +569,18 @@ footer {
     transition: opacity .35s, transform .5s;
     //transition-delay: .25s;
     opacity: 1 !important;
+    //margin-top: -100px !important;
 }
 
 .scrolling-up {
     .is-in-viewport {
-        transform: translateY(100px);
+        //transform: translateY(100px);
     }
 }
 
 .scrolling-down {
     .is-in-viewport {
-        transform: translateY(-100px);
+        //transform: translateY(-100px);
     }
 }
 

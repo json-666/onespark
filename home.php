@@ -3,7 +3,7 @@
 ?>
 <section class="component__standardSection component__standardSection__variableHeight js-changeColor font__color__black item__color__white">
     <div class="container text-start component__blogspot">
-        <div class="row">
+        <div class="row wow animate__animated animate__fadeInLeft" data-wow-delay=".15s">
             <div class="col-lg-6 offset-lg-1">
                 <h1 class=" font__size__68"><span class=" font__color__green">Zawsze aktualna</span><br/>porcja informacji o&nbsp;projektowaniu i&nbsp;marketingu</h1>
             </div>
@@ -22,7 +22,7 @@
                         continue;
                     }
                     ?>
-                <div class="col-lg-6 text-center text-lg-start component__blogspot__items__wrapper <?php if($j == 0 && $postLP < count( $all_posts )){echo "component__blogspot__items__wrapper__left";}else{echo "component__blogspot__items__wrapper__right";} ?>">
+                <div class="col-lg-6 text-center text-lg-start component__blogspot__items__wrapper <?php if($j == 0 && $postLP < count( $all_posts )){echo "component__blogspot__items__wrapper__left";}else{echo "component__blogspot__items__wrapper__right";} ?> wow animate__animated animate__fadeInUp" data-wow-delay=".15s">
                     <div class="component__blogspot__items__inner">
                         <div class="component__blogspot__items__inner__image__container">
                             <?php //var_dump( $all_posts[$postLP] ); ?>

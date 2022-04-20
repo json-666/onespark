@@ -1,7 +1,7 @@
 <section class="component__standardSection component__standardSection__variableHeight js-changeColor font__color__white m-0 is-in-viewport" aria-label="black" aria-rowcount="0" data-depth="1">
     <div class="container">
         <div class="row align-items-center justify-content-between">
-            <div class="col-lg-10 standard-js-scrollBehave left">
+            <div class="col-lg-10 standard-js-scrollBehave left wow animate__animated animate__fadeInLeft" data-wow-delay=".15s">
                     <div class="row align-items-center mb-5">
                         <div class="col-lg-1 col-md-2 col-sm-3 col-4"><div style="height: 2px; background-color: #fff !important"></div></div>
                         <div class="col-auto"><h5 class="font__color__white text-start font__size__24 font__weight__4 mb-0">Kariera</h5></div>
@@ -30,8 +30,8 @@
                             the_row();
                             ?>
                             <div class="py-5 my-5 <?if($i == 3){echo "mb-0 pb-0";}?> component__wierdItem">
-                                <h1 class="font__color__purple font__size__32 font__weight__7"><?the_sub_field("tytul")?></h1>
-                                <div class=" font__size__16 font__color__darkGrey mt-5">
+                                <h1 class="font__color__purple font__size__32 font__weight__7 wow animate__animated animate__fadeInUp" data-wow-delay="<?php echo .15*$i; ?>s"><?the_sub_field("tytul")?></h1>
+                                <div class=" font__size__16 font__color__darkGrey mt-5 wow animate__animated animate__fadeInUp" data-wow-delay="<?php echo .15*$i; ?>s">
                                     <?the_sub_field("tresc")?>
                                 </div>
                             </div>
@@ -45,10 +45,12 @@
         <?php 
             if( have_rows("dodatkowo") ){
                 ?><div class="row"><?php
+                $i=1;
                 while( have_rows("dodatkowo") ){
                     the_row();
+                    $i++;
                     ?>
-                    <div class="col-md px-2 my-5 my-md-0">
+                    <div class="col-md px-2 my-5 my-md-0 wow animate__animated animate__fadeInUp" data-wow-delay="<?php echo .15*$i; ?>s">
                         <img src="<?the_sub_field("obraz")?>" alt="" class="w-100">
                         <div class="font__size__18 font__weight__7 mt-5"><?the_sub_field("tresc")?></div>
                     </div>
@@ -59,7 +61,7 @@
                 <?
             }
         ?>
-        <div class="text-center">
+        <div class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="1.15s">
             <a href="#" class="mx-auto item__btn d-inline-block item__color__green font__color__black font__weight__7 font__size__24 px-5 mt-5" style="border-radius: 28px;">APLIKUJ</a>
         </div>
     </div>

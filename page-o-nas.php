@@ -5,7 +5,7 @@
 <section class="row w-100 component__slider__home component__standardSection m-0 is-in-viewport" aria-label="black" aria-rowcount="0" data-depth="3">
     <div class="container" style="max-width: 1500px !important;">
         <div class="d-flex align-items-center h-100 w-100">
-            <div class="col-lg col-12 text-lg-center">
+            <div class="col-lg col-12 text-lg-center wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
                 <h1 class="text-center font__size__48 font__weight__700">Jesteśmy designerami,<br/>rozwiązujemy problemy...<br/><br/>reszta to marketing</h1>
             </div>
         </div>
@@ -15,12 +15,12 @@
     <div class="container" tyle="max-width: 1560px !important;">
         <div class="row align-items-center">
             <div class="col-lg">
-                <img src="<?php echo get_template_directory_uri() ?>/images/AdobeStock_244936579.png" class="w-100" alt="">
+                <img src="<?php echo get_template_directory_uri() ?>/images/AdobeStock_244936579.png" class="w-100 wow animate__animated animate__fadeInUp" data-wow-delay=".5s" alt="">
             </div>
 
             <div class="col-lg text-center">
-                <img src="<?php echo get_template_directory_uri() ?>/images/AdobeStock_415116560.png" class="w-100 mt-5" alt="">
-                <img src="<?php echo get_template_directory_uri() ?>/images/AdobeStock_215885531.png" class="w-100 mt-5" alt="" style="margin-top: 300px;">
+                <img src="<?php echo get_template_directory_uri() ?>/images/AdobeStock_415116560.png" class="w-100 mt-5 wow animate__animated animate__fadeInUp" data-wow-delay=".25s" alt="">
+                <img src="<?php echo get_template_directory_uri() ?>/images/AdobeStock_215885531.png" class="w-100 mt-5 wow animate__animated animate__fadeInUp" data-wow-delay=".75s" alt="" style="margin-top: 300px;">
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@
 
 <?php $i = 1; ?>
 <?php while( have_rows( "flexes" ) ): the_row(); ?>
-<section class="component__standardSection component__standardSection__variableHeight js-changeColor font__color__black next-in-viewport m-0 p-0" aria-label="black" aria-rowcount="<?php echo $i+1; ?>" data-depth="2">
+<div class="font__color__black m-0 p-0 wow animate__animated animate__fadeInUp" data-wow-delay=".5s" aria-label="black" aria-rowcount="<?php echo $i+1; ?>" data-depth="2">
     <div class="container" tyle="max-width: 1500px !important;">
         <div class="component__aboutus--flexyItem">
             <div class="row align-items-center justify-content-between my-5 py-5 component__aboutus--flexyItem__item">
@@ -44,16 +44,21 @@
             </div>
         </div>
     </div>
-</section>
+</div>
 <?php $i++; ?>
 <?php endwhile; ?>
 
-<section class="component__standardSection component__standardSection__variableHeight js-changeColor font__color__black next-in-viewport m-0" id="defer-scroll" aria-label="black" aria-rowcount="<?php echo $i+1; ?>" data-depth="2">
-    <div class="row flex-nowrap defer-scroll wow slideInLeft justify-content-center" style="overflow-x: scroll; overflow-y: hidden">
+<div class="font__color__black next-in-viewport m-0" id="defer-scroll" aria-label="black" aria-rowcount="<?php echo $i+1; ?>" data-depth="2">
+    <div class="row flex-nowrap defer-scroll slideInLeft justify-content-center" style="overflow-x: scroll; overflow-y: hidden">
         <!--<div class="col-lg-7 col-1 "></div>-->
         <?php $j = 0; ?>
-        <?php while( have_rows( "zespol" ) ): the_row(); ?>
-        <div class="col-lg-2 col-sm-6 col-10 font__color__white position-relative px-3">
+        <?php while( have_rows( "zespol" ) ): the_row(); 
+            $elementDelay = 0;
+            $initialDelay = .5;
+            $thisDelay = .20*$j;
+            $elementDelay = $thisDelay+$initialDelay;
+        ?>
+        <div class="col-lg-2 col-sm-6 col-10 font__color__white position-relative px-3 wow animate__animated animate__fadeInUp" data-wow-delay="<?php echo $elementDelay;?>s">
             <img src="<?php the_sub_field( "zdjecie_#1" ); ?>" alt="" class="w-100 position-relative" style="transition: .25s all; left: 0;" id="zdjecie1<?php echo $j ?>">
             <img src="<?php the_sub_field( "zdjecie_#2" ); ?>" alt="" class="w-100 position-absolute opacity-0" style="transition: .25s all; left: 0; padding: 0 17px;" id="zdjecie2<?php echo $j ?>">
             <h2 class="font__size__24 font__weight__700 mt-4"><?php the_sub_field( "imie" ); ?></h2>
@@ -67,7 +72,7 @@
         <?php endwhile; ?>
         <!--<div class="col-lg-7 col-1 "></div>-->
     </div>
-</section>
+</div>
 <script>
     //var changed = false;
     //var left = 100;

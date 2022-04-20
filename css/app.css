@@ -632,14 +632,6 @@ footer h5 {
   opacity: 1 !important;
 }
 
-.scrolling-up .is-in-viewport {
-  transform: translateY(100px);
-}
-
-.scrolling-down .is-in-viewport {
-  transform: translateY(-100px);
-}
-
 .before-in-viewport,
 .next-in-viewport {
   opacity: 0 !important;

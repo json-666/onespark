@@ -44,7 +44,7 @@
         <section class="component__standardSection component__standardSection__variableHeight component__project js-changeColor <?if($i == 0){?>is-in-viewport<?}?>  <?if($i == 1){?>next-in-viewport<?}?>" aria-label="<?php echo $currentIdentifier; ?>" aria-rowcount="<?echo $i;?>">
             <div class="container" <?php if($i != 0){ ?>data-aos="fade-up"<?php } ?>>
                 <div class="row align-items-center">
-                    <div class="col-xl col-lg-6">
+                    <div class="col-xl col-lg-6 wow animate__animated animate__fadeInLeft" data-wow-delay=".75s">
                             <div class="row align-items-center mb-5">
                                 <div class="col-lg-1 col-md-2 col-sm-3 col-4"><div style="height: 2px; background-color: <?php the_field("kolor_czcionki");?>;"></div></div>
                                 <div class="col-auto"><h5 class="component__project-link<?echo $currentIdentifier?> text-start font__size__24 font__weight__4 mb-0"><?the_field("projekt_dla:")?></h5></div>
@@ -53,7 +53,7 @@
                             <a href="<?echo get_the_permalink()?>" class="d-inline-block text-uppercase item__btn p-0 font__size__18 font__weight__7 mt-lg-5 pt-5 component__project-link<?echo $currentIdentifier?>" style="text-decoration: underline;">Zobacz Case Study</a>
                             <p class="component__project-link<?echo $currentIdentifier?> font__size__18 mt-lg-5 pt-5">Zakres pracy: <?the_field("tagi:")?></p>
                     </div>
-                    <div class="col-xl col-lg-6">
+                    <div class="col-xl col-lg-6 wow animate__animated animate__fadeInRight" data-wow-delay=".75s">
                         <img src="<?the_field("obrazek_reprezentatywny")?>" alt="xopenhub representative image" class="w-100">
                     </div>
                 </div>
