@@ -25,7 +25,8 @@
     <script src="<?echo get_template_directory_uri();?>/js/WOW-master/dist/wow.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
-    <?php // wp_head(); ?>
+    <?php  wp_head(); ?>
+    <?php  wp_scripts(); ?>
 </head>
 <?php
     if(get_post_type() == "nasze_projekty"){
@@ -72,3 +73,7 @@
         </div>
     </header>
     <div class="firstFromTop"></div>
+    <div class="font__color__white">
+        <?php var_dump($post); ?>
+    </div>
+    
