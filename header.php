@@ -73,7 +73,3 @@
         </div>
     </header>
     <div class="firstFromTop"></div>
-    <div class="font__color__white">
-        <?php var_dump($post); ?>
-    </div>
-    
