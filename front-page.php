@@ -4,7 +4,7 @@
 
 <section class="row w-100 component__slider__home component__standardSection m-0 is-in-viewport" aria-label="black" aria-rowcount="0" data-depth="3">
     <div class="col-12 component__slider__home__inner">
-        <h1 class="font__color__white text-center font__size__68 font__weight__700"><?the_field("tytul")?></h1>
+        <h1 class="font__color__white text-center font__size__68 font__weight__700">to jest tytuł<?//the_field("tytul")?></h1>
         <p class="font__color__white text-center font__size__24 mt-5"><?the_field("pod-tytul")?></p>
     </div>
     <img src="<?echo get_template_directory_uri()?>/images/aroow_down.svg" alt="" class="d-block mx-auto position-absolute" style="bottom: 0; width: 66px; left: 50%; transform: translateX(-50%)" onclick="window.scrollTo(document.getElementById('aboutUs'), 0)">
