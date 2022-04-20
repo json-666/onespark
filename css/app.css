@@ -620,7 +620,7 @@ footer h5 {
 
 .firstFromTop {
   transition: all 0.25s !important;
-  margin-bottom: 140px;
+  margin-bottom: 90px;
 }
 
 .firstFromTop.header-is-active {

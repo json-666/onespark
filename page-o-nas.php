@@ -61,7 +61,7 @@
             <div class="mt-4 font__size__16" style="transition: .25s all; opacity: 0; max-height: 0" id="expandableText<?php echo $j ?>">
                 <?php the_sub_field( "opis" ); ?>
             </div>
-            <img src="<?php echo get_template_directory_uri() ?>/images/plas.png" alt="" onclick="expand(this, <?php echo $j ?>)" class="plus position-relative" style="cursor: pointer; z-index: 99; transition: .25s all">
+            <img src="<?php echo get_template_directory_uri() ?>/images/plas.svg" alt="" onclick="expand(this, <?php echo $j ?>)" class="plus position-relative" style="cursor: pointer; z-index: 99; transition: .25s all">
         </div>
         <?php $j++; ?>
         <?php endwhile; ?>
@@ -154,7 +154,7 @@
         if(x.classList.contains( "plus" )){
             x.classList.remove("plus");
             x.classList.add("minus");
-            x.src = "<?php echo get_template_directory_uri() ?>/images/minas.png";
+            x.src = "<?php echo get_template_directory_uri() ?>/images/minus.svg";
             document.getElementById(name).style.transition = ".25s all";
             document.getElementById(name).style.maxHeight = "300px";
             document.getElementById(name).style.removeProperty("opacity");
@@ -164,7 +164,7 @@
         else{
             x.classList.add("plus");
             x.classList.remove("minus");
-            x.src = "<?php echo get_template_directory_uri() ?>/images/plas.png";
+            x.src = "<?php echo get_template_directory_uri() ?>/images/plas.svg";
             document.getElementById(name).style.transition = ".25s all";
             document.getElementById(name).style.maxHeight = "0";
             document.getElementById(name).style.opacity = "0";

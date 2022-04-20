@@ -14,7 +14,8 @@
     <link rel="stylesheet" href=https://use.typekit.net/dgn6ynf.css>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/hamburgers-master/dist/hamburgers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <base href="<?php echo get_home_url()?>/">
@@ -23,8 +24,12 @@
     <script src="<?echo get_template_directory_uri();?>/js/fadeControl.js"></script>
     <script src="<?echo get_template_directory_uri();?>/js/headerControl.js"></script>
     <script src="<?echo get_template_directory_uri();?>/js/WOW-master/dist/wow.min.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     <?php  wp_head(); ?>
     <?php  wp_scripts(); ?>
 </head>

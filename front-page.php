@@ -138,43 +138,7 @@
             </div>
         </div>
         <div class="row mt-5 pt-5 ">
-            <div class="col-lg-4">
-                <div class="row justify-content-center justify-content-lg-start">
-                    <div class="col-auto" style="cursor: pointer;" onclick="document.getElementById('scrollThisRow').scrollBy({top: 0, left: -document.getElementsByClassName('getThisWidth')[0].offsetWidth, behavior: 'smooth' })"><img src="<?php echo get_template_directory_uri() ?>/images/arrow_with_bg_left.png" alt=""></div>
-                    <div class="col-auto" style="cursor: pointer;" id="clickRight" onclick="document.getElementById('scrollThisRow').scrollBy({top: 0, left: document.getElementsByClassName('getThisWidth')[0].offsetWidth, behavior: 'smooth' })"><img src="<?php echo get_template_directory_uri() ?>/images/arrow_with_bg_right.png" alt=""></div>
-                </div>
-            </div>
-            <style>
-                .getThisWidth{
-                    cursor: grab;
-                }
-                .getThisWidth:active{
-                    cursor: grabbing;
-                }
-            </style>
-            <div class="col-lg-8 col-12">
-                <div class="row flex-nowrap overflow-scroll" id="scrollThisRow" >
-                    <?php if( have_rows("opinie") ){?>
-                            <?php while( have_rows("opinie") ){ the_row();?>
-                            <?php for($i = 0; $i < 10; $i++){ ?>
-                            <div class="col-lg-6 mt-5 pt-5 pt-lg-0 mt-lg-0 getThisWidth">
-                                <img src="<?php the_sub_field( "logoooo" ) ?>" alt="">
-                                <div class=" font__size__18 mt-4" style="color: #1a1a1a">
-                                    <?the_sub_field("tresc");?>
-                                </div>
-                                <div class="row mt-5 align-items-center text-start">
-                                    <div class="col-sm-2 col-3"><img src="<?the_sub_field("foto");?>" alt="" class="w-100"></div>
-                                    <div class="col">
-                                        <p class="mb-0 font__size__18 font__color__purple"><?the_sub_field("imie_klineta");?></p>
-                                        <p class="mb-0 font__size__14 font__weight__7 font__color__purple"><?the_sub_field("stanowisko__firma");?></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <?}?>
-                        <?}?>
-                    <?}?>
-                </div>
-            </div>
+            <?php get_template_part( "templates/homepage/opinionslider" ); ?>
 
         </div>
         <?php
