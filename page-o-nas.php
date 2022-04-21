@@ -48,7 +48,7 @@
 <?php $i++; ?>
 <?php endwhile; ?>
 
-<div class="font__color__black next-in-viewport m-0" id="defer-scroll" aria-label="black" aria-rowcount="<?php echo $i+1; ?>" data-depth="2">
+<div class="font__color__black m-0 py-5" id="defer-scroll" aria-label="black" aria-rowcount="<?php echo $i+1; ?>" data-depth="2">
     <div class="row flex-nowrap defer-scroll slideInLeft justify-content-center" style="overflow-x: scroll; overflow-y: hidden">
         <!--<div class="col-lg-7 col-1 "></div>-->
         <?php $j = 0; ?>

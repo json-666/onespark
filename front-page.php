@@ -23,6 +23,7 @@
             </aside>
             <div class="col-lg-4 ms-lg-5 ps-lg-5 mt-5 mt-lg-0 component__wierdItem__container widget text-center text-lg-start wow animate__fadeInUp animate__animated" data-wow-delay=".5s" id="scrolly2">
                 <?php if( have_rows("slide") ){?>
+                    <?php for($x = 0; $x < 3; $x++){?>
                     <?php while( have_rows("slide") ){ the_row();?>
                         <div class="py-5 my-5 component__wierdItem">
                             <h3 class="font__color__purple font__size__24 font__weight__7 mb-5 pb-5"><?the_sub_field("tytul")?></h3>
@@ -34,6 +35,7 @@
                             <?php } ?>
                         </div>
                     <?}?>
+                    <?php } ?>
                 <?}?>
             </div>
         </div>
