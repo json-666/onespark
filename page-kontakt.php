@@ -28,8 +28,8 @@
                 </div>
                 <p class="font__color__white mt-5 pt-5">
                     Onespark Agencja Kreatywna<br/>
-                    ul. Brukowa 12, 91-341 Łódź<br/>
-                    tel. +48 608 054 629 | +48 888 754 085
+                    Plac Zwycięstwa 2, 90-312 Łódź | Budynek D, II Piętro<br/>
+                    tel. <a href="tel:+48 608 054 629" class=" font__color__white " style="text-decoration: none">+48 608 054 629</a> | <a href="tel:+48 888 754 085" class=" font__color__white " style="text-decoration: none">+48 888 754 085</a>
                 </p>
             </div>
             <div class="col-lg-auto pt-5">

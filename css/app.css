@@ -90,6 +90,10 @@ h2 {
   font-size: 8px !important;
 }
 
+.font__size__10 {
+  font-size: 10px !important;
+}
+
 .font__size__13 {
   font-size: 13px !important;
 }
@@ -655,7 +659,7 @@ footer h5 {
     left: 0;
     transition: all 0.25s;
     background-color: #1a1a1a;
-    padding: 75px 20px;
+    padding: 25px 20px;
     margin: 0 !important;
     width: 100% !important;
   }
@@ -703,6 +707,10 @@ footer h5 {
   .component__blogspot__items__wrapper__left {
     bottom: 0;
   }
+  .menu-item {
+    font-size: 24px;
+    line-height: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -745,16 +753,25 @@ footer h5 {
     font-size: 40px !important;
   }
   .font__size__68 {
-    font-size: 43px !important;
+    font-size: 35px !important;
   }
   .font__size__48 {
-    font-size: 40px !important;
+    font-size: 32px !important;
+  }
+  .font__size__24 {
+    font-size: 18px !important;
+  }
+  .font__size__18 {
+    font-size: 16px !important;
+  }
+  .font__size__16 {
+    font-size: 14px !important;
   }
 }
 
 @media screen and (max-width: 350px) {
   .font__size__68 {
-    font-size: 39px !important;
+    font-size: 35px !important;
   }
 }
 

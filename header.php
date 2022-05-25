@@ -58,13 +58,13 @@
                             <?php
                                 $args = array (
                                     'menu' => 'headerMenu',
-                                    'menu_class' => 'row align-items-center m-0',
+                                    'menu_class' => 'row align-items-center m-0 ps-0',
                                 );
                                 wp_nav_menu( $args );
                             ?>
                         </nav>
                         <div class="col-lg-auto component__btn-challenge__container">
-                            <p class="text-end component__language"><a href="#">PL</a> <span class="d-inline-block mx-2">|</span> <a href="#">EN</a></p>
+                            <p class="text-end component__language d-none"><a href="#">PL</a> <span class="d-inline-block mx-2">|</span> <a href="#">EN</a></p>
                             <a href="kontakt/" class="item__btn component__btn-challenge font__color__green font__weight__7">Masz dla nas wyzwanie?</a>
                         </div>
                     </div>

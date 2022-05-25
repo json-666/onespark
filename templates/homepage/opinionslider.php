@@ -1,11 +1,11 @@
 <?php if( have_rows("opinie") ): ?>
-<div class="col-lg-4">
-    <div class="row justify-content-center justify-content-lg-start mb-5 mb-lg-0">
-        <div class="col-auto button-prev" style="cursor: pointer;" id="clickLeft"><img src="<?php echo get_template_directory_uri() ?>/images/arrow_with_bg_left.png" alt=""></div>
-        <div class="col-auto button-next" style="cursor: pointer;" id="clickRight"><img src="<?php echo get_template_directory_uri() ?>/images/arrow_with_bg_right.png" alt=""></div>
+<div class="col-lg-4 order-last order-lg-first">
+    <div class="row justify-content-center justify-content-lg-start mt-5 mb-lg-0">
+        <div class="col-md-auto col-3 button-prev" style="cursor: pointer;" id="clickLeft"><img class="w-100" src="<?php echo get_template_directory_uri() ?>/images/arrow_with_bg_left.png" alt=""></div>
+        <div class="col-md-auto col-3 button-next" style="cursor: pointer;" id="clickRight"><img class="w-100" src="<?php echo get_template_directory_uri() ?>/images/arrow_with_bg_right.png" alt=""></div>
     </div>
 </div>
-<div class="col-lg-8 col-12">
+<div class="col-lg-8 col-12 order-first order-lg-last">
     <div class="swiper homepage-opinions-slider">
         <div class="swiper-wrapper">
         <?php while( have_rows("opinie") ){ the_row();?>

@@ -14,19 +14,8 @@
 
 <section id="aboutUs" class="component__standardSection component__standardSection__variableHeight js-changeColor font__color__black next-in-viewport m-0" aria-label="white" aria-rowcount="1" data-depth="2">
     <div class="container">
-        <div class="row align-items-top justify-content-between sidebar js-sticky-widget-container position-relative">
-            <aside class="col-lg-6 position-relative wow animate__fadeInUp animate__animated" data-wow-delay=".5s">
-                <div class="widget position-absolute text-center text-lg-start" style="position: sticky !important;" id="sticky">
-                    <h2 class=" font__color__purple font__size__58 mb-5" style="letter-spacing: 1.16px;">Całe serce wkładamy w:</h2>
-                    <img src="<?echo get_template_directory_uri()?>/images/emptyness.png" alt="" class="img-responsive w-100">
-                </div>
-            </aside>
-            <div class="col-lg-4 ps-lg-5 component__wierdItem__container widget text-center text-lg-start wow animate__fadeInUp animate__animated" data-wow-delay=".5s" id="scrolly2">
-                <?php if( have_rows("slide") ){?>
-                    <?php get_template_part( "templates/homepage/vertilacSliders" ); ?>
-                <?}?>
-            </div>
-        </div>
+        <h2 class=" font__color__purple font__size__58 mb-5" style="letter-spacing: 1.16px;">Całe serce wkładamy w:</h2>
+        <?php get_template_part( "templates/homepage/vertilacSliders" ); ?>
     </div>
 </section>
 
@@ -62,11 +51,14 @@
             .item__color__<?php echo $currentIdentifier; ?> > a{
                 color: <?php echo get_field("kolor_czcionki"); ?>;
             }
+            .item__color__<?php echo $currentIdentifier; ?>__line{
+                background-color: <?php the_field("kolor_czcionki");?>;
+            }
         </style>
             <section class="component__standardSection component__standardSection__variableHeight js-changeColor mt-0 pt-0" aria-label="<?php echo $currentIdentifier; ?>" aria-rowcount="2">
                 <div class="container">
                     <div class="row align-items-center ">
-                        <div class="col-xl col-lg-6 wow animate__animated animate__fadeInLeft" data-wow-delay=".5s">
+                        <div class="col-xl col-lg-6 wow animate__animated animate__fadeInLeft order-last order-lg-first mt-5 mt-lg-0" data-wow-delay=".5s">
                                 <div class="row align-items-center mb-5">
                                     <div class="col-lg-1 col-md-2 col-sm-3 col-4"><div style="height: 2px; " class="item__color__<?php echo $currentIdentifier; ?>__line"></div></div>
                                     <div class="col-auto"><h5 class="component__project-link<?php echo $currentIdentifier; ?> text-start font__size__24 font__weight__4  mb-0"><?the_field("projekt_dla:")?></h5></div>
@@ -75,7 +67,7 @@
                                 <a href="<?echo  get_the_permalink()?>" class="component__project-link<?php echo $currentIdentifier; ?> d-inline-block text-uppercase item__btn p-0 font__size__18 font__weight__7  mt-lg-5 pt-5" style="text-decoration: underline;">Zobacz Case Study</a>
                                 <p class=" component__project-link<?php echo $currentIdentifier; ?> font__size__18  mt-lg-5 pt-5">Zakres pracy: <?the_field("tagi:")?></p>
                         </div>
-                        <div class="col-xl col-lg-6 wow animate__animated animate__fadeInRight" data-wow-delay=".5s">
+                        <div class="col-xl col-lg-6 wow animate__animated animate__fadeInRight order-first order-lg-last" data-wow-delay=".5s">
                             <img src="<?the_field("obrazek_reprezentatywny")?>" alt="xopenhub representative image" class="w-100">
                         </div>
                     </div>
@@ -85,8 +77,8 @@
     }
     wp_reset_query( );
 ?>
-<section class="component__standardSection component__standardSection__variableHeight js-changeColor" aria-label="black" aria-rowcount="3">
-    <div class="container text-center text-lg-start">
+<section class="component__standardSection component__standardSection__variableHeight js-changeColor pb-0 mb-0" aria-label="black" aria-rowcount="3">
+    <div class="container">
         <div class="row">
             <div class="col-lg-6 wow animate__animated animate__fadeInLeft" data-wow-delay=".5s">
                 <h2 class="font__size__58 font__color__white"><?the_field("tytul-o-nas")?></h2>
@@ -128,7 +120,7 @@
                 </p>
             </div>
             <div class="col-lg-3">
-                <p class=" font__color__purple font__size__34 font__weight__7 text-uppercase">
+                <p class=" font__color__purple font__size__34 font__weight__7 text-uppercase" style="line-height: 40px;">
                     Oto co niektórzy z&nbsp;nich mają do opowiedzenia
                 </p>
             </div>
@@ -143,7 +135,7 @@
         <div class="sub-section component__homepageBlogPost mt-5 pt-5">
             <div class="row align-items-center">
                 <div class="col-md-6 wow animate__animated animate__fadeInLeft" data-wow-delay=".5s">
-                    <p class="font--creolia font__size__48 font__weight__7 font__color__purple mb-5 pb-5">Sprawdź, o czym pisaliśmy ostatnio na naszym blogu.</p>
+                    <p class="font--creolia font__size__48 font__weight__7 font__color__purple mb-5 pb-5" style="line-height: 40px;">Sprawdź, o czym pisaliśmy ostatnio na naszym blogu.</p>
                     <p class="font__size__18 font__weight__7 font__color__black mt-lg-5 pt-5"><?echo explode(" ",$lastPost[0]["post_date"])[0];?></p>
                     <h3 class="font__weight__7"><?php echo $lastPost[0]["post_title"]; ?></h3>
                     <div class="component__homepageBlogPost__shortDesc my-4">

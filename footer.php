@@ -24,28 +24,28 @@
             </div>
             <div class="col-lg col-md-4 col-12 g-0 mt-4">
                 <h5>Marketing</h5>
-                <p class="my-3 mt-4">Content marketing</p>
-                <p class="my-3">Kampanie reklamowe </p>
-                <p class="my-3">Audyty</p>
+                <p class="my-2 mt-4">Content marketing</p>
+                <p class="my-2">Kampanie reklamowe </p>
+                <p class="my-2">Audyty</p>
             </div>
             <div class="col-lg col-md-4 col-12 g-0 mt-4">
                 <h5>Design</h5>
-                <p class="my-3 mt-4">Webdesign</p>
-                <p class="my-3">Branding</p>
-                <p class="my-3">Projektowanie materiałów drukowanych</p>
-                <p class="my-3">Inne</p>
+                <p class="my- mt-4">Webdesign</p>
+                <p class="my-">Branding</p>
+                <p class="my-">Projektowanie materiałów drukowanych</p>
+                <p class="my-">Inne</p>
             </div>
             <div class="col-lg col-md-4 col-12 g-0 mt-4">
                 <h5>Strony i sklepy internetowe</h5>
-                <p class="my-3 mt-4">Tworzenie stron internetowych</p>
-                <p class="my-3">Tworzenie sklepów internetowych</p>
+                <p class="my-2 mt-4">Tworzenie stron internetowych</p>
+                <p class="my-2">Tworzenie sklepów internetowych</p>
             </div>
             <div class="col-lg col-md-4 col-12 g-0 mt-4">
                 <h5>Firma</h5>
-                <p class="my-3 mt-4">How we work</p>
-                <p class="my-3">Blog</p>
-                <p class="my-3">Carrers <?if( get_field("zatrudniamy","options") == "1"){?><span class=" item__color__green px-2 py-1 font__size__10 font__color__black" style="border-radius: 3px;">we are hiring</span><?}?></p>
-                <p class="my-3">Contact us</p>
+                <p class="my-2 mt-4">How we work</p>
+                <p class="my-2">Blog</p>
+                <p class="my-2">Carrers <?if( get_field("zatrudniamy","options") == "1"){?><span class=" item__color__green px-2 py-1 font__size__10 font__color__black" style="border-radius: 3px;">we are hiring</span><?}?></p>
+                <p class="my-2">Contact us</p>
             </div>
         </div>
     </div>

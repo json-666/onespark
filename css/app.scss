@@ -1,6 +1,7 @@
 /*Define fotn sizes*/
 
 $fontSizes: 8,
+10,
 13,
 14,
 16,
@@ -607,7 +608,7 @@ footer {
         left: 0;
         transition: all $transitionTime;
         background-color: $black;
-        padding: 75px 20px;
+        padding: 25px 20px;
         margin: 0 !important;
         width: 100% !important;
         .menu-item {
@@ -656,6 +657,10 @@ footer {
     .component__blogspot__items__wrapper__left {
         bottom: 0;
     }
+    .menu-item {
+        font-size: 24px;
+        line-height: 50px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -698,16 +703,25 @@ footer {
         font-size: 40px !important;
     }
     .font__size__68 {
-        font-size: 43px !important;
+        font-size: 35px !important;
     }
     .font__size__48 {
-        font-size: 40px !important;
+        font-size: 32px !important;
+    }
+    .font__size__24 {
+        font-size: 18px !important;
+    }
+    .font__size__18 {
+        font-size: 16px !important;
+    }
+    .font__size__16 {
+        font-size: 14px !important;
     }
 }
 
 @media screen and(max-width: 350px) {
     .font__size__68 {
-        font-size: 39px !important;
+        font-size: 35px !important;
     }
 }
 
