@@ -1,17 +1,17 @@
 <?php
     get_header();
 ?>
-<section class="font__color__white item__color__black pt-5 is-in-viewport component__kontakt">
+<section class="font__color__white item__color__black pt-md-5 is-in-viewport component__kontakt">
     <div class="container mx-auto pt-5 mt-5" style="max-width: 1375px !important;">
         <div class="row mb-5 pb-5 justify-content-between">
             <div class="col-lg-6 text-center text-lg-start">
                 <h1 class=" font__size__68">Porozmawiajmy o&nbsp;Twoim projekcie</h1> 
                 <div class="row mt-5">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <p class="font__size__24 font__weight__7">Wyślij Brief</p>
                         <a href="mailto:oferta@onespark.pl" class="font__color__white font__size__18">oferta@onespark.pl</a>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 mt-md-0 mt-5">
                         <p class="font__size__24 font__weight__7">Dołącz do zespołu</p>
                         <a href="mailto:oferta@onespark.pl" class="font__color__white font__size__18">rekrutacja@onespark.pl</a>
                     </div>

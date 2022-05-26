@@ -54,6 +54,10 @@ h2 {
   font-family: "Creolia4" !important;
 }
 
+.font--proxima {
+  font-family: "proxima-nova" !important;
+}
+
 .font__weight__1 {
   font-weight: 100;
 }
@@ -298,14 +302,6 @@ h2 {
   color: #181b43 !important;
 }
 
-.component__header img {
-  padding-top: 42px !important;
-}
-
-.component__navbar {
-  padding-top: 42px !important;
-}
-
 .component__navbar li {
   display: block;
   width: auto;
@@ -406,14 +402,20 @@ h2 {
   transition: all 0.25s !important;
 }
 
-.component__slider__home__inner h1 {
+.component__slider__home__inner h2 {
   transition: all 0.25s !important;
   max-width: 950px;
   margin: auto;
 }
 
-.component__slider__home__inner h1 strong {
+.component__slider__home__inner h2 strong {
   color: #01fa86 !important;
+}
+
+.component__slider__home__inner p {
+  max-width: 950px;
+  display: block;
+  margin: auto;
 }
 
 .component__homepageBlogPost__shortDesc {
@@ -434,7 +436,7 @@ h2 {
 
 .component__project:first-of-type {
   margin-top: 0 !important;
-  padding-top: 15vh !important;
+  padding-top: 7vh !important;
 }
 
 .component__project__title strong {
@@ -809,5 +811,11 @@ footer h5 {
   100% {
     opacity: 1;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .component__kontakt__circle__green {
+    max-width: 380px !important;
   }
 }

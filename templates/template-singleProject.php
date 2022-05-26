@@ -29,7 +29,7 @@
         color: <?php echo the_field( "kolor_czcionki" ) ?> !important
     }
 </style>
-<section class="component__standardSection component__standardSection__variableHeight component__project js-changeColor is-in-viewport" aria-label="item__color__<?php echo $currentIdentifier; ?>">
+<section class="component__standardSection component__standardSection__variableHeight component__project js-changeColor is-in-viewport componen__headerseciotn__project" aria-label="item__color__<?php echo $currentIdentifier; ?>">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-xl col-lg-6 standard-js-scrollBehave left">
@@ -38,11 +38,13 @@
                         <div class="col-auto"><h5 style="color: <?php if( get_field( "czy_kolor_w_naglowku_inny" ) ){ the_field( "kolor_w_naglowku" ); }else{ the_field( "kolor_czcionki" ); } ?> !important" class="component__project-link<?echo $currentIdentifier?> text-start font__size__24 font__weight__4 mb-0"><?the_field("projekt_dla:")?></h5></div>
                     </div>
                     <h2 style="color: <?php if( get_field( "czy_kolor_w_naglowku_inny" ) ){ the_field( "kolor_w_naglowku" ); }else{ the_field( "kolor_czcionki" ); } ?> !important" class="component__project-link<?echo $currentIdentifier?> font__size__48 mt-5 pt-4"><?echo the_title()?></h2>
-                    <a style="color: <?php if( get_field( "czy_kolor_w_naglowku_inny" ) ){ the_field( "kolor_w_naglowku" ); }else{ the_field( "kolor_czcionki" ); } ?> !important; text-decoration: underline;" href="<?echo  get_the_permalink()?>#casestudy" class="d-inline-block text-uppercase item__btn p-0 font__size__18 font__weight__7 mt-lg-5 pt-5 component__project-link<?echo $currentIdentifier?>">Zobacz Case Study</a>
             </div>
             <div class="col-xl col-lg-6 standard-js-scrollBehave right text-center">
                 <img src="<?the_field("obrazek_reprezentatywny")?>" alt="xopenhub representative image" class="w-100" style="max-width: fit-content">
             </div>
+        </div>
+        <div class="text-center">
+            <a href="<?php echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>#casestudy"><img src="<?echo get_template_directory_uri()?>/images/aroow_down.svg" alt="" class="d-block mx-auto position-absolute wow animate__animated animate__bounce" style="bottom: 0; width: 36px; margin: auto; display: block !important; left: calc(50% - 18px);" data-wow-delay=".5s" onclick="window.scrollTo(document.getElementById('aboutUs'), 0)"></a>
         </div>
     </div>
 </section>

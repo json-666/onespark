@@ -4,7 +4,8 @@
 
 <section class="row w-100 component__slider__home component__standardSection m-0 is-in-viewport" aria-label="black" aria-rowcount="0" data-depth="3">
     <div class="col-12 component__slider__home__inner">
-        <h1 class="font__color__white text-center font__size__68 font__weight__700"><?the_field("tytul")?></h1>
+        <h1 class="font__color__white text-center font__size__24 mb-5 font--proxima"><?the_field("nad-tytul")?></h1>
+        <h2 class="font__color__white text-center font__size__68 font__weight__700"><?the_field("tytul")?></h2>
         <p class="font__color__white text-center font__size__24 mt-5"><?the_field("pod-tytul")?></p>
     </div>
     <div class="text-center">
@@ -14,7 +15,7 @@
 
 <section id="aboutUs" class="component__standardSection component__standardSection__variableHeight js-changeColor font__color__black next-in-viewport m-0" aria-label="white" aria-rowcount="1" data-depth="2">
     <div class="container">
-        <h2 class=" font__color__purple font__size__58 mb-5" style="letter-spacing: 1.16px;">Całe serce wkładamy w:</h2>
+        <h2 class=" font__color__purple font__size__58 mb-5 wow animate__animated animate__fadeInDown" data-wow-delay=".05s" style="letter-spacing: 1.16px;">Całe serce wkładamy w:</h2>
         <?php get_template_part( "templates/homepage/vertilacSliders" ); ?>
     </div>
 </section>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/app.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/fonts/Creolia/Creolia.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href=https://use.typekit.net/dgn6ynf.css>
+    <link rel="stylesheet" href="https://use.typekit.net/dgn6ynf.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/hamburgers-master/dist/hamburgers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>

@@ -41,7 +41,7 @@
                 color: <?php echo get_field("kolor_czcionki"); ?> !important;
             }
         </style>
-        <section class="component__standardSection component__standardSection__variableHeight component__project js-changeColor <?if($i == 0){?>is-in-viewport<?}?>  <?if($i == 1){?>next-in-viewport<?}?>" aria-label="<?php echo $currentIdentifier; ?>" aria-rowcount="<?echo $i;?>">
+        <section class="component__standardSection component__standardSection__variableHeight component__project js-changeColor <?if($i == 0){?>is-in-viewport<?}else{?> p-0<?}?>  <?if($i == 1){?>next-in-viewport<?}?>" aria-label="<?php echo $currentIdentifier; ?>" aria-rowcount="<?echo $i;?>">
             <div class="container" <?php if($i != 0){ ?>data-aos="fade-up"<?php } ?>>
                 <div class="row align-items-center">
                     <div class="col-xl col-lg-6 wow animate__animated animate__fadeInLeft" data-wow-delay=".75s">

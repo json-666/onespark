@@ -89,6 +89,9 @@ h2 {
     &--creolia {
         font-family: "Creolia4" !important;
     }
+    &--proxima {
+        font-family: "proxima-nova" !important;
+    }
     &__weight {
         @for $weight from 1 to 9 {
             &__#{$weight} {
@@ -265,12 +268,8 @@ h2 {
                 }
             }
         }
-        img {
-            padding-top: 42px !important;
-        }
     }
     &__navbar {
-        padding-top: 42px !important;
         li {
             display: block;
             width: auto;
@@ -355,13 +354,18 @@ h2 {
                 top: 50%;
                 transform: translateY(-50%);
                 transition: all $transitionTime !important;
-                h1 {
+                h2 {
                     transition: all $transitionTime !important;
                     max-width: 950px;
                     margin: auto;
                     strong {
                         color: $green !important
                     }
+                }
+                p {
+                    max-width: 950px;
+                    display: block;
+                    margin: auto;
                 }
             }
         }
@@ -381,7 +385,7 @@ h2 {
         opacity: 0;
         &:first-of-type {
             margin-top: 0 !important;
-            padding-top: 15vh !important;
+            padding-top: 7vh !important;
         }
         &__title {
             strong {
@@ -759,5 +763,11 @@ footer {
     100% {
         opacity: 1;
         transform: none;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .component__kontakt__circle__green {
+        max-width: 380px !important;
     }
 }

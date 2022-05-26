@@ -7,6 +7,7 @@
 <script>
   AOS.init();
 </script>
+
 <footer class="container-fluid item__color__black py-5">
     <div class="container text-center text-lg-start">
         <img src="<?the_field("logotyp_dla_stopki", "options")?>" alt="">
@@ -22,31 +23,14 @@
                 <p class="mt-3">Sales:</p>
                 <p class="mb-3"><a href="mailto:oferta@onespark.pl">oferta@onespark.pl</a></p>
             </div>
-            <div class="col-lg col-md-4 col-12 g-0 mt-4">
-                <h5>Marketing</h5>
-                <p class="my-2 mt-4">Content marketing</p>
-                <p class="my-2">Kampanie reklamowe </p>
-                <p class="my-2">Audyty</p>
-            </div>
-            <div class="col-lg col-md-4 col-12 g-0 mt-4">
-                <h5>Design</h5>
-                <p class="my- mt-4">Webdesign</p>
-                <p class="my-">Branding</p>
-                <p class="my-">Projektowanie materiałów drukowanych</p>
-                <p class="my-">Inne</p>
-            </div>
-            <div class="col-lg col-md-4 col-12 g-0 mt-4">
-                <h5>Strony i sklepy internetowe</h5>
-                <p class="my-2 mt-4">Tworzenie stron internetowych</p>
-                <p class="my-2">Tworzenie sklepów internetowych</p>
-            </div>
-            <div class="col-lg col-md-4 col-12 g-0 mt-4">
-                <h5>Firma</h5>
-                <p class="my-2 mt-4">How we work</p>
-                <p class="my-2">Blog</p>
-                <p class="my-2">Carrers <?if( get_field("zatrudniamy","options") == "1"){?><span class=" item__color__green px-2 py-1 font__size__10 font__color__black" style="border-radius: 3px;">we are hiring</span><?}?></p>
-                <p class="my-2">Contact us</p>
-            </div>
+            <?php while( have_rows( "kollumny","options" ) ): the_row();?>
+                <div class="col-lg col-md-4 col-12 g-0 mt-4">
+                    <h5 class="mb-4"><?php the_sub_field( "tytul" ) ?></h5>
+                    <?php while( have_rows( "linki" ) ): the_row();?>
+                        <p class="my-2"><a href="<?php echo get_sub_field( "odnosnik" )['url']; ?>" target="<?php echo get_sub_field( "odnosnik" )['target']; ?>"><?php echo get_sub_field( "odnosnik" )['title']; ?></a></p>
+                    <?php endwhile; ?>
+                </div>
+            <?php endwhile; ?>
         </div>
     </div>
     <div class="container mt-5">
